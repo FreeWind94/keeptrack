@@ -18,7 +18,7 @@ export class Project {
         if (initializer.description) this.description = initializer.description;
         if (initializer.imageUrl) this.imageUrl = initializer.imageUrl;
         if (initializer.contractTypeId) this.contractTypeId = initializer.contractTypeId;
-        if (initializer.contractSignedOn) this.contractSignedOn = initializer.contractSignedOn;
+        if (initializer.contractSignedOn) this.contractSignedOn = new Date(initializer.contractSignedOn);
         if (initializer.budget) this.budget = initializer.budget;
         if (initializer.isActive) this.isActive = initializer.isActive;
     }
